@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration-color: #545540;
+}
+a {
+    text-decoration: none;
+    
+    color: inherit;
+    background-color: transparent;
+}
+.breadcrumbs a{
+    transition: all .3s ease-in-out;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h4, .h4 {
+    font-family: AtlasGrotesk,Helvetica,san-serif;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+.breadcrumbs{
+    margin: 30px 25px 0px;
+
+}
+.breadcrumbs ol{
+    display: flex;
+    flex-wrap: wrap;
+}
+.breadcrumbs ol li {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.breadcrumbs ol li:first-child{
+    padding-left: 0;
+
+}
+.bulletpoint:before {
+    background: #545540;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: 12px;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 4px;
+}
+
+.single-pro-image {
+    
+    width: 60%;
+    margin-right: 50px;
+    padding-left: 95px;
+    padding-top: 0px;
+}
+#pro-details{
+    display: flex;
+    margin-top: 20px;
+}
+#pro-details .single-pro-details select{
+    display: block;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+
+}
+#pro-details .single-pro-details .quantity{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.btn{
+    background-color: #545540;
+    font-size: 24px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 43px;
+    width: 368px;
+    height: 76px;
+
+}
+.icon-text-wrapper{
+    margin: 0 10px;
+    width: calc(33.3333333333% - 20px);
+}
+.icon-text--section{
+    border-top: 0.75px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.section--product-details {
+    align-items: center;
+    display: flex;
+}
+.product-single-description {
+    align-self: flex-start;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    width: 60%;
+}
+.product-description{
+    display: flex;
+    margin-top: 152px;
+    padding-left: 99px ;
+    
+}
+.description-about{
+    width: 50%;
+    margin-right: 130px;
+
+
+}
+.description-specification{
+    width: 35%;
+}
+#need-help div{
+    display: flex;
+}
+#need-help div i{
+    padding: 6px;
+    margin-right: 5px;
+    
+}
+#need-help div i a:hover{
+    text-decoration: underline;
+}
+.product-slider{
+    margin:0px;
+    padding:0px;
+    background-color: #f7f2ed;;
+}
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+    
+}
+.slide-img{
+    height: 450px;
+    position: relative;
+}
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+
+}
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: AtlasGrotesk,Helvetica,san-serif;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+}
+.type a{
+    color: #222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+
+}
+.type span{
+    color: rgba(26,26,26,0.5);
+}
+.price{
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1em;
+    font-family: poppins;
+    letter-spacing: 0.5px;
+
+}
+.overlay{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 104, 116, 0.6);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: AtlasGrotesk,Helvetica,san-serif; 
+    border-radius: 20px;
+    box-shadow:2px 2px 30px rgba(0,0,0,0.2);
+
+}
+.buy-btn:hover{
+    color: #ffffff;
+    background-color:#545540;
+    transition: all ease 0.3s;
+
+}
+.overlay{
+    visibility: hidden;
+}
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation:fade 0.5s;
+
+}
+
+@keyframes fade{
+    0%{
+       opacity:0; 
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.youmay{
+    margin-left: 99px;
+    font-family:canela;
+    font-size: 30px;
+    margin-top: 171px;
+    margin-bottom: 26px;
+
+
+    
+}
+/* ---------------customize fabric css------------- */
+.drawing-area{
+    position: absolute;
+    top: 60px;
+    left: 122px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+}
+
+.canvas-container{
+    width: 200px; 
+    height: 400px; 
+    position: relative; 
+    user-select: none;
+}
+
+#tshirt-div{
+    width: 452px;
+    height: 548px;
+    position: relative;
+    background-color: #fff;
+}
+
+#canvas{
+    position: absolute;
+    width: 200px;
+    height: 400px; 
+    left: 0px; 
+    top: 0px; 
+    user-select: none; 
+    cursor: default;
+}
+.payment-info{
+    margin-bottom: 15px;
+    margin-top:80px;
+
+}

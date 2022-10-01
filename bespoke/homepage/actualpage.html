@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="product-view-page.css">
+    <link rel="stylesheet" href="./lightslider.css">
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./lightslider.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BESPOKE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Women</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <nav class="breadcrumbs" data-breadcrumb="" role="navigation" aria-label="breadcrumbs">
+            <ol>
+                <li class="h4">
+                    <a href="/collections/all-leather-goods" title="">All Leather Goods</a>
+                </li>
+                     
+                        <li class="bulletpoint">    
+                           
+                            <a href="/products/barney-wallet-black" class="h4" id="barney-wallet" aria-current="page">Barney Wallet</a>
+                        </li>
+            </ol>
+        </nav>
+      </div>
+
+      
+
+
+      <section id="pro-details" class="section-p1">
+          <div class="single-pro-image">
+            <div id="tshirt-div">
+                <!-- 
+                    Initially, the image will have the background tshirt that has transparency
+                    So we can simply update the color with CSS or JavaScript dinamically
+                -->
+                <img id="tshirt-backgroundpicture" src="./content/background_tshirt.png"/>
+    
+                <div id="drawingArea" class="drawing-area">					
+                    <div class="canvas-container">
+                        <canvas id="tshirt-canvas" width="200" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="single-pro-details">
+              <h2>Cotton T-shirt</h6>
+              <h6>$69.95</h2>
+                <hr>
+                <label for="tshirt-size">Size:</label>
+                <select >
+                    <option >select size</option>
+                    <option >Small</option>
+                    <option >Medium</option>
+                    <option >Large</option>
+                </select>
+                
+        <label for="tshirt-design">T-Shirt Design:</label>
+        <select id="tshirt-design">
+            <option value="">Select one of our designs ...</option>
+            <option value="./content/batman.png">Batman</option>
+        </select>
+
+        <!-- The Select that allows the user to change the color of the T-Shirt -->
+        
+        <label for="tshirt-color">T-Shirt Color:</label>
+        <select id="tshirt-color">
+            <!-- You can add any color with a new option and definings its hex code -->
+            <option value="#fff">White</option>
+            <option value="#000">Black</option>
+            <option value="#f00">Red</option>
+            <option value="#008000">Green</option>
+            <option value="#ff0">Yellow</option>
+        </select>
+        <label for="tshirt-custompicture">Upload design:</label>
+        <input type="file" id="tshirt-custompicture" /><br><br>
+                <input type="number" class="quantity" value="1">
+                <button class="btn">Add To Cart</button>
+                <br>
+                <div class="payment-info">
+                  <span >
+                    Make 4 payments of $17.48 with
+                    <br>
+                    Make 4 payments of $17.48 with 
+                </span>
+
+                </div>
+                
+
+
+                <div class="icon-text--section">
+    
+    
+    
+        
+                    <div class="icon-text-wrapper">
+                        
+                        <div class="icon-text-icon"><i class="fa-solid fa-rotate-left fa-3x"></i> </div>
+                        <p>Easy Returns</p>
+                    </div>
+                
+            
+                
+            
+                
+                    
+                    <div class="icon-text-wrapper">
+                        <div class="icon-text-icon icon-text-icon-gift"><i class="fa-solid fa-gift fa-3x"></i></div>
+                        <p>Gift Wrapping</p>
+                    </div>
+                
+            
+                
+                    <div class="icon-text-wrapper">
+                        <div class="icon-text-icon icon-text-icon-chat"><i class="fa-regular fa-comment fa-3x"></i></div>
+                        <p>Live Chat</p>
+                    </div>
+                
+            
+            </div>
+            
+
+
+          </div>
+          
+        
+      </section>
+      <section class="product-description">
+          <div class="description-about">
+              <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore veniam autem? Itaque exercitationem sunt, nam architecto, veritatis labore modi velit similique enim minima nesciunt eius voluptate doloremque dicta blanditiis?
+              </span>
+              <br>
+              <br>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis!
+              </span>
+              <br>
+              <br>
+              <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi blanditiis dolore officiis natus nisi sed minima eligendi. Voluptatem praesentium sit atque eos corrupti, dolore, doloribus architecto saepe nemo tempora nam blanditiis assumenda fugiat neque exercitationem labore numquam maiores at ullam placeat odit! Veniam perferendis error, animi temporibus quis itaque deleniti.
+              </span>
+              <br><br><br><br>
+              <hr>
+
+          </div>
+
+          <div class="description-specification">
+            
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        SPECIFICATIONS
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Materials</strong> <br>
+                        <p><span style="font-weight: 400;">Crafted from grained calfskin with a pebbled leather interior.</span></p>
+                        <strong>size</strong>
+                      <p><span style="font-weight: 400;">10.5cm (W) x 9cm (H) x 1.8cm (D)</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      SHIPPING & RETURNS
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p><span style="font-weight: 400;">We offer free shipping on all Australian orders over $150AUD with free online exchanges and easy 14-day returns.</span></p><br>
+                        <p><span style="font-weight: 400;">Express delivery within Australia: 1-2 business days.</span></p><br>
+                      <p><span style="font-weight: 400;">Standard delivery within Australia: 2-4 business days.</span></p><br>
+                      <p><span style="font-weight: 400;">New Zealand and International Delivery: 3-7 business days.</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      NEED HELP?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body" id="need-help">
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>Email us on this <a href="#">@info.customize.com</a></p>
+                        </div>
+                        <br>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Call us on this 661-2007043</p>
+                        </div>
+                            
+                            
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+      </section >
+      
+<br>
+
+         <h5 class="youmay">You may also like :</h5>
+          <section class="product-slider">
+        <ul id="autoWidth" class="cs-hidden">
+            <!-- 1--------------------------- -->
+        
+            <li class="item-a">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="./content/remmybag.webp" alt="">
+                       <div class="overlay">
+                           <a href="#" class="buy-btn">Buy Now</a>
+                       </div>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="type">
+                          <a href="#">Remmy Bag</a>
+                          <span>New arrival</span>  
+                        </div>
+                        <a href="#" class="price">$25</a>
+                    </div>
+         
+                </div>
+
+            </li>
+
+            <!-- 1--------------------------- -->
+        
+            <li class="item-b">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="./content/thekeyfob.webp" alt="">
+                       <div class="overlay">
+                           <a href="#" class="buy-btn">Buy Now</a>
+                       </div>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="type">
+                          <a href="#">Key FOb</a>
+                          <span>New arrival</span>  
+                        </div>
+                        <a href="#" class="price">$15</a>
+                    </div>
+         
+                </div>
+
+            </li>
+            <!-- 1--------------------------- -->
+        
+            <li class="item-c">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="./content/watch.webp" alt="">
+                       <div class="overlay">
+                           <a href="#" class="buy-btn">Buy Now</a>
+                       </div>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="type">
+                          <a href="#">kissel Watch</a>
+                          <span>New arrival</span>  
+                        </div>
+                        <a href="#" class="price">$29</a>
+                    </div>
+         
+                </div>
+
+            </li>
+            <!-- 1--------------------------- -->
+        
+            <li class="item-d">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="./content/Barney wallet.webp" alt="">
+                       <div class="overlay">
+                           <a href="#" class="buy-btn">Buy Now</a>
+                       </div>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="type">
+                          <a href="#">Barney Wallet</a>
+                          <span>New arrival</span>  
+                        </div>
+                        <a href="#" class="price">$69</a>
+                    </div>
+         
+                </div>
+
+            </li>
+            <!-- 1--------------------------- -->
+        
+            <li class="item-e">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="./content/blackleatherbag.webp" alt="">
+                       <div class="overlay">
+                           <a href="#" class="buy-btn">Buy Now</a>
+                       </div>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="type">
+                          <a href="#">Black backpack</a>
+                          <span>New arrival</span>  
+                        </div>
+                        <a href="#" class="price">$23</a>
+                    </div>
+         
+                </div>
+
+            </li>
+            <!-- 1--------------------------- -->
+        
+            <li class="item-f">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="./content/blackleatherbag.webp" alt="">
+                       <div class="overlay">
+                           <a href="#" class="buy-btn">Buy Now</a>
+                       </div>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="type">
+                          <a href="#">Black backpack</a>
+                          <span>New arrival</span>  
+                        </div>
+                        <a href="#" class="price">$23</a>
+                    </div>
+         
+                </div>
+
+            </li>
+            
+          </ul>
+
+
+
+
+       
+
+
+      </section>
+
+
+      <footer>
+          <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+      </footer>
+
+      
+      <script type="text/javascript" src="./script.js"></script>
+      <!-- Include Fabric.js in the page -->
+      <script src="./fabric.js-5.2.4/dist/fabric.min.js"></script>
+
+      <script>
+          let canvas = new fabric.Canvas('tshirt-canvas');
+
+          function updateTshirtImage(imageURL){
+              fabric.Image.fromURL(imageURL, function(img) {                   
+                  img.scaleToHeight(300);
+                  img.scaleToWidth(300); 
+                  canvas.centerObject(img);
+                  canvas.add(img);
+                  canvas.renderAll();
+              });
+          }
+          
+          // Update the TShirt color according to the selected color by the user
+          document.getElementById("tshirt-color").addEventListener("change", function(){
+              document.getElementById("tshirt-div").style.backgroundColor = this.value;
+          }, false);
+
+          // Update the TShirt color according to the selected color by the user
+          document.getElementById("tshirt-design").addEventListener("change", function(){
+
+              // Call the updateTshirtImage method providing as first argument the URL
+              // of the image provided by the select
+              updateTshirtImage(this.value);
+          }, false);
+
+          // When the user clicks on upload a custom picture
+          document.getElementById('tshirt-custompicture').addEventListener("change", function(e){
+              var reader = new FileReader();
+              
+              reader.onload = function (event){
+                  var imgObj = new Image();
+                  imgObj.src = event.target.result;
+
+                  // When the picture loads, create the image in Fabric.js
+                  imgObj.onload = function () {
+                      var img = new fabric.Image(imgObj);
+
+                      img.scaleToHeight(300);
+                      img.scaleToWidth(300); 
+                      canvas.centerObject(img);
+                      canvas.add(img);
+                      canvas.renderAll();
+                  };
+              };
+
+              // If the user selected a picture, load it
+              if(e.target.files[0]){
+                  reader.readAsDataURL(e.target.files[0]);
+              }
+          }, false);
+
+          // When the user selects a picture that has been added and press the DEL key
+          // The object will be removed !
+          document.addEventListener("keydown", function(e) {
+              var keyCode = e.keyCode;
+
+              if(keyCode == 46){
+                  console.log("Removing selected element on Fabric.js on DELETE key !");
+                  canvas.remove(canvas.getActiveObject());
+              }
+          }, false);
+      </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+</html>
